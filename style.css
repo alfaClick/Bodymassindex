@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f2f6ff;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section pertama: Kalkulator BMI */
+/* Section pertama: Kalkulator BMI */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.text-section {
+    flex-basis: 45%;
+    padding-right: 30px;
+}
+
+.text-section h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Kalkulator BMI - Perbaikan card */
+.calculator-card {
+    flex-basis: 50%; /* Mengatur card mengambil separuh lebar */
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 450px; /* Menetapkan lebar maksimum agar proporsional */
+    margin: 0 auto; /* Membuat card tetap di tengah jika ruang lebih */
+}
+
+/* Form Kalkulator BMI */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    flex-basis: 30%;
+    font-size: 1.2em;
+}
+
+.form-group input {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.unit-selector {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.unit-selector label {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+#calculateBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#calculateBtn:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .calculator-card {
+        max-width: 100%;
+    }
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    flex-basis: 30%;
+    font-size: 1.2em;
+}
+
+.form-group input {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.unit-label {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+#calculateBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#calculateBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Section kedua: Informasi BMI */
+/* Section kedua: Informasi BMI */
+#bmi-result-info {
+    padding: 80px 20px;
+    background-color: #f2f6ff;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Gambar dengan gradient */
+.image-container {
+    flex-basis: 50%;
+    background: linear-gradient(135deg, #d7e8fc 50%, #ffffff 50%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Card untuk teks dengan sisi tumpul */
+.text-card {
+    flex-basis: 45%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px; /* Membuat sisi card tumpul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan untuk efek card */
+    margin-left: 30px; /* Jarak antara card dan gambar */
+}
+
+.text-card h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-card {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .text-container {
+        padding-left: 0;
+    }
+}
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container, .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .calculator-card, .image-container {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f6ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
